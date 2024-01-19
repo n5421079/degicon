@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="styles/selectstyle.css">
+        <title>Wiki Jump</title>
+    </head>
+    <body>
+        <main>
+            <form name="option">
+                <div  class="box-001">
+                    <svg class="window-bar" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="ウインドウのボタン">
+                        <circle cx="25" cy="12" r="5.5" fill="#f48384"/>
+                        <circle cx="45" cy="12" r="5.5" fill="#fbd172"/>
+                        <circle cx="65" cy="12" r="5.5" fill="#82c880"/>
+                    </svg>
+                    問題の出し方<br>
+                    <label>
+                        <input type="radio" name="question" value="mine" required>自分で選ぶ
+                    </label><br>
+                    <label>
+                        <input type="radio" name="question" value="genre" required>ジャンルは選ぶ
+                    </label><br>
+                    <label>
+                        <input type="radio" name="question" value="random" required>おまかせ
+                    </label><br>
+                </div>
+                <div  class="box-001">
+                    <svg class="window-bar" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="ウインドウのボタン">
+                        <circle cx="25" cy="12" r="5.5" fill="#f48384"/>
+                        <circle cx="45" cy="12" r="5.5" fill="#fbd172"/>
+                        <circle cx="65" cy="12" r="5.5" fill="#82c880"/>
+                    </svg>
+                    問題ジャンル<br>
+                    <table>
+                        <tr>
+                            <td>
+                                <label>
+                                    <input type="radio" name="genre" value="literature" required>文学・芸術
+                                </label>
+                            </td>
+                            <td>
+                                <label>
+                                    <input type="radio" name="genre" value="social" required>社会
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>
+                                    <input type="radio" name="genre" value="geological_history" required>地歴
+                                </label>
+                            </td>
+                            <td>
+                                <label>
+                                    <input type="radio" name="genre" value="natural" required>自然科学
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>
+                                    <input type="radio" name="genre" value="flora_and_fauna" required>動植物
+                                </label>
+                            </td>
+                            <td>
+                                <label>
+                                    <input type="radio" name="genre" value="sports" required>スポーツ
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>
+                                    <input type="radio" name="genre" value="subculture" required>芸能・サブカル
+                                </label>
+                            </td>
+                            <td>
+                                <label>
+                                    <input type="radio" name="genre" value="trivia" required>生活・雑学
+                                </label>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="start">
+                    <input type="submit" value="START">
+                </div>
+            </form>
+            <div id="video-area">
+                <video id="video" poster="images/title.png" webkit-playsinline playsinline muted autoplay loop>
+                    <source src="video/title.mp4" type="video/mp4">
+                    <source src="video/title.ogv" type="video/ogv">
+                    <source src="video/title.webm" type="video/webm">
+                    <p>動画を再生できる環境ではありません。</p>
+                </video>
+            </div>
+        </main>
+        <script type="module" src="main.js"></script>
+    </body>
+</html>
